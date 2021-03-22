@@ -9,6 +9,8 @@ var numCharsChoice = "";
 var passwordChars = "";
 var passwordChars= "";
 var passwordLength= "";
+var password="";
+var passwordText="";
 
 
 var upperCaseChars = "ABCDEFGHJKLMNPQRSTWXYZ";
@@ -16,8 +18,8 @@ var lowerCaseChars = "abcdefgijkmnopqrstwxyz";
 var numChars = "0123456789";
 var specialChars = "*$-+?_&=!%{}/";
 
-//me: function to determine which character types the user wants to include in his password
-function getCharsforPassword () {
+//me: function to determine which character types the user wants to include in his password 
+function getCharsForPassword () {
   var lowerCaseCharsChoice = confirm("Would you like to include lowercase letters ?") ;
     if (lowerCaseCharsChoice==true) {
       passwordChars+=lowerCaseChars;
@@ -38,7 +40,16 @@ function getCharsforPassword () {
     if (specialCharsChoice ==true) { 
       passwordChars+=specialChars;
 }
-  return passwordChars
+// me: valitdating my users input to make sure one of the character types has been chosen 
+if(lowerCaseCharsChoice || upperCaseCharsChoice || numCharsChoice || specialCharsChoice ){
+ return passwordChars
+}
+
+ else {
+  alert("There needs to be at least one character type in your password");
+  getCharsForPassword()
+}
+  
       }
 
 // Add event listener to generate button
@@ -66,7 +77,7 @@ function generatePassword() {
   passwordLength = parseInt(prompt("Password length: Enter a number between 8 and 128"));
 
     if (passwordLength <8) {
-    alert ("your password must be between 8 and 128 character") ;
+    alert ("your password must be between 8 and 128 character");
 }
 
     if (passwordLength >128) {
@@ -79,11 +90,6 @@ function generatePassword() {
       
 
     }
-  // me: for loop to determine whether the user has entered at least one character type and if not then he will be asked the questions again 
-    // if (lowerCaseCharsChoice==false && upperCaseCharsChoice==false && !numCharsChoice==false) {
-    //   alert ("You must at least use one character type in your password") ;
-
-    //   getCharsforPassword () ;
 }
   // me: for loop to generate random password 
 
@@ -91,11 +97,11 @@ function generatePassword() {
     
     randomPasswordGenerate += passwordChars[Math.floor(Math.random() * passwordChars.length)]
   }
-  // return randomPasswordGenerate;
+ 
+  
     
     
      
 
-// me: function to input user's choices into a variable called passwordChars and return the result which will then be used in the for loop
 
   
