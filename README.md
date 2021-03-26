@@ -34,15 +34,9 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-## ScreenShot of the password generator 
+## Screen Shot of final work 
 
-The following image shows the web application's appearance :
+The following image shows the web application's appearance and functionality:
 
-<img width="1280" alt="Screen Shot 2021-03-26 at 9 50 45 am" src="https://user-images.githubusercontent.com/78780973/112566379-d5f71b00-8e19-11eb-90b9-ad1cd9ab9234.png">
-
-
-
-## URL to the deployed page 
-
-https://joeylong6.github.io/homework-3-passwordGenerator/
+![] (Assets/03-javascript-homework-demo.png)
 
