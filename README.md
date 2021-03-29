@@ -14,7 +14,7 @@ The following image shows the web application's appearance and functionality:
 
 To use the Password Generator, you need to click on the red button to start the process. 
 
-![](Assets/03-javascript-homework-demo.png)
+![](Assets/images/03-javascript-homework-demo.png)
 
 ## Link to deployed webpage
 
