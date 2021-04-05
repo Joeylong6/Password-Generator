@@ -18,5 +18,5 @@ To use the Password Generator, you need to click on the red button to start the 
 
 ## Link to deployed webpage
 
-https://joeylong6.github.io/homework-3-passwordGenerator/
+https://joeylong6.github.io/Password-Generator/
 
